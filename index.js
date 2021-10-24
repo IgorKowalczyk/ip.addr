@@ -45,6 +45,13 @@ app.get("/json-simple", function (req, res) {
  res.send(json);
 });
 
+app.get("/endpoints", function (req, res) {
+ const json = {
+  endpoints: "json, json-simple"
+ }
+ res.send(json)
+})
+
 app.use(function (req, res, next) {
  res.status(404);
  const json = {
