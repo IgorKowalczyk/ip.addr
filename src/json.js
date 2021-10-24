@@ -19,7 +19,7 @@ async function ipAddrInfo(ip) {
  if (!lookedIP) {
   return { error: "Error occured while trying to process the information!" };
  }
- return lookedIP;
+ return {ip, ...lookedIP};
 }
 
 module.exports = { getRateLimitMessage, ipAddrInfo };
