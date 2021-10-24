@@ -1,5 +1,11 @@
-## What is my IP?
+<img width="170" height="170" align="left" style="float: left; margin: 0 10px 0 0; border-radius: 50%;" alt="Majo.exe Logo" src="https://media.discordapp.net/attachments/721019707607482409/901835740063879269/icon.png">
+
+# What is my IP?
+
 > Javascript API to display user's IP address and information about it
+<br>
+
+---
 
 [![Discord](https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://majobot.igorkowalczyk.repl.co/server)
 [![Node.js](https://img.shields.io/github/workflow/status/igorkowalczyk/what-is-my-ip/Node.js/master?style=flat-square&label=Node.js&logo=github&color=%2334D058)](https://majobot.igorkowalczyk.repl.co/)
