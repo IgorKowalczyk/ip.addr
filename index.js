@@ -2,6 +2,7 @@ if (Number(process.version.slice(1).split(".")[0]) < 16) throw new Error("API re
 const express = require("express");
 const rate_limit = require("express-rate-limit");
 const messages = require("./src/json.js");
+const iplocate = require("node-iplocate");
 require("dotenv").config();
 const port = process.env.PORT || 6565;
 const app = express();
@@ -14,6 +15,7 @@ process.env.SESSION_SECRET = "";
 for (let i = 0; i <= 15; i++) {
  process.env.SESSION_SECRET += Math.random().toString(16).slice(2, 8).toUpperCase().slice(-6) + i;
 }
+app.set("query parser", "simple");
 app.set("trust proxy", true);
 app.use(limiter);
 app.locals.domain = process.env.DOMAIN.split("//")[1];
@@ -29,28 +31,22 @@ app.get("/", function (req, res) {
 });
 
 app.get("/json", async function (req, res) {
- var xForwardedFor = (req.headers["x-forwarded-for"] || "").replace(/:\d+$/, "");
- var ip = xForwardedFor || req.connection.remoteAddress;
- res.send(await messages.ipAddrInfo(ip));
-});
-
-app.get("/json-simple", function (req, res) {
+ req.query;
  let ip = req.headers["x-forwarded-for"] || req.connection.remoteAddress || res.ip;
  if (ip.includes("::ffff:")) {
   ip = ip.split(":").reverse()[0];
  }
- const json = {
-  ip: ip,
+iplocate(ip).then(function(results) {
+ const response = {
+   ip: ip,
+   ...(req.query.city == "true" && {city: results.city}),
+   ...(req.query.country == "true" && {country: results.country}),
+   ...(req.query.country_code == "true" && {country_code: results.country_code}),
+   ...(req.query.continent == "true" && {continent: results.continent}),
  };
- res.send(json);
+ res.send(response);
 });
-
-app.get("/endpoints", function (req, res) {
- const json = {
-  endpoints: "json, json-simple"
- }
- res.send(json)
-})
+});
 
 app.use(function (req, res, next) {
  res.status(404);

@@ -15,8 +15,7 @@
 ## Endpoints
 
 - `/` - Display only IP Address
-- `/json` - Display IP Adress & info about location etc. in .json format
-- `/json-simple` Display only IP Adress in .json format
+- `/json` - Display IP Adress in `.json` format
 
 
 ## Features

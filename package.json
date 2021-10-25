@@ -1,41 +1,43 @@
 {
- "name": "what-is-my-ip",
- "version": "0.0.0",
- "description": "Javascript API to display user IP. Supports text and json.",
- "main": "index.js",
- "scripts": {
-  "start": "node index.js",
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "format": "prettier --write . --ignore-unknown",
-  "format:check": "prettier --check ."
- },
- "repository": {
-  "type": "git",
-  "url": "git+https://github.com/igorkowalczyk/what-is-my-ip.git"
- },
- "keywords": [
-  "IP",
-  "ip-addr",
-  "api",
-  "javascript"
- ],
- "author": "Igor Kowalczyk",
- "license": "MIT",
- "bugs": {
-  "url": "https://github.com/igorkowalczyk/what-is-my-ip/issues"
- },
- "homepage": "https://github.com/igorkowalczyk/what-is-my-ip#readme",
- "dependencies": {
-  "dotenv": "^10.0.0",
-  "express": "^4.17.1",
-  "express-rate-limit": "^5.5.0",
-  "express-session": "^1.17.2",
-  "fast-geoip": "^1.1.42"
- },
- "devDependencies": {
-  "prettier": "^2.4.1"
- },
- "engines": {
-  "node": "16.x"
- }
+  "name": "what-is-my-ip",
+  "version": "0.0.0",
+  "description": "Javascript API to display user IP. Supports text and json.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write . --ignore-unknown",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorkowalczyk/what-is-my-ip.git"
+  },
+  "keywords": [
+    "IP",
+    "ip-addr",
+    "api",
+    "javascript"
+  ],
+  "author": "Igor Kowalczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igorkowalczyk/what-is-my-ip/issues"
+  },
+  "homepage": "https://github.com/igorkowalczyk/what-is-my-ip#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.5.0",
+    "express-session": "^1.17.2",
+    "fast-geoip": "^1.1.42",
+    "node-iplocate": "^1.0.2"
+  },
+  "devDependencies": {
+    "node": "^16.12.0",
+    "prettier": "^2.4.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
 }
