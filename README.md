@@ -16,6 +16,7 @@
 
 - `/` - Display only IP Address
 - `/json` - Display IP Adress in `.json` format
+- > **`/json` endpoint accept following arguments:**<br>`?show_all=[boolean]` - Show all data<br>`?city=[boolean]` - Show city<br>`?country=[boolean]` - Show country
 
 
 ## Features
