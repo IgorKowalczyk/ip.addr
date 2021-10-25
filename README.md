@@ -14,15 +14,16 @@
 
 ## Endpoints
 
-- `/` - Display only IP Address
+- `/` - Display only IP Address in `text` format
 - `/json` - Display IP Adress in `.json` format
-- > **`/json` endpoint accept following arguments:**<br>`?show_all=[boolean]` - Show all data<br>`?city=[boolean]` - Show city<br>`?country=[boolean]` - Show country
+- > **`/json` endpoint accept following arguments:**<br>`?show_all=[boolean]` - Show all data, ignore other arguments<br>`?city=[boolean]` - Show city<br>`?country=[boolean]` - Show country<br>`?continent=[boolean]` - Show continent<br>`?latitude=[boolean]` - Show latitude<br>`?longitude=[boolean]` - Show longitude<br>`?time_zone=[boolean]` - Show time zone<br>`?postal_code=[boolean]` - Show postal code<br>`?org=[boolean]` - Show ISP name<br>`?asn=[boolean]` - Show asn
 
 
 ## Features
 - ☠️ Dead Simple
 - 🔥 Fast response time
 - ⚙️ Fully customizable
+- 🧱 Customizable `.json` endpoint
 
 ## Hosting
 1. In `.env` file set:
