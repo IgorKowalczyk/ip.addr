@@ -30,7 +30,6 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.5.0",
     "express-session": "^1.17.2",
-    "fast-geoip": "^1.1.42",
     "node-iplocate": "^1.0.2"
   },
   "devDependencies": {
