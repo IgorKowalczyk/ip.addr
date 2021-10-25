@@ -24,6 +24,7 @@
 - 🔥 Fast response time
 - ⚙️ Fully customizable
 - 🧱 Customizable `.json` endpoint
+- ❌ No API key required
 
 ## Hosting
 1. In `.env` file set:
