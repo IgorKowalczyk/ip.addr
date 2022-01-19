@@ -1,0 +1,13 @@
+{
+"ip":"STRING",
+"city": "STRING",
+"country": "STRING",
+"country_code": "STRING",
+"continent": "STRING",
+"latitude": NUMBER,
+"longitude": NUMBER,
+"time_zone": "TIME_ZONE",
+"postal_code": "STRING",
+"org": "STRING",
+"asn": "STRING"
+}
