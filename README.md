@@ -2,10 +2,10 @@
 
 # IP.addr
 > Javascript API to display user's IP address and information about it<br><br>
-[![Discord](https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyk.github.io)
-[![Node.js](https://img.shields.io/github/workflow/status/igorkowalczyk/what-is-my-ip/Node.js/master?style=flat-square&label=Node.js&logo=github&color=%2334D058)](https://igorkowalczyk.github.io)
+[![Discord](https://img.shields.io/discord/666599184844980224?color=%2334D058&logo=discord&label=Discord&style=flat-square&logoColor=fff)](https://igorkowalczyl.dev)
+[![Node.js](https://img.shields.io/github/workflow/status/igorkowalczyk/what-is-my-ip/Node.js/master?style=flat-square&label=Node.js&logo=github&color=%2334D058)](https://igorkowalczyl.dev)
 [![GitHub License](https://img.shields.io/github/license/igorkowalczyk/what-is-my-ip?style=flat-square&logo=github&label=License&color=%2334D058)](https://github.com/IgorKowalczyk/what-is-my-ip)
-[![Version](https://img.shields.io/github/package-json/v/igorkowalczyk/what-is-my-ip?style=flat-square&logo=github&label=Version&color=%2334D058)](https://igorkowalczyk.github.io/r/discord-server)
+[![Version](https://img.shields.io/github/package-json/v/igorkowalczyk/what-is-my-ip?style=flat-square&logo=github&label=Version&color=%2334D058)](https://igorkowalczyl.dev/r/discord)
 
 ---
 
