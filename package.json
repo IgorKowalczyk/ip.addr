@@ -33,7 +33,7 @@
   "node-iplocate": "^1.0.3"
  },
  "devDependencies": {
-  "node": "^19.1.0",
+  "node": "^19.2.0",
   "prettier": "^2.8.0"
  },
  "engines": {
